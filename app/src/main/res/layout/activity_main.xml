@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/light_green">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/what"
+            style="@style/TextView1" />
+
+        <TextView
+            android:text="@string/knowledge"
+            style="@style/TextView2" />
+
+        <TextView
+            android:text="@string/takeQuiz"
+            style="@style/TextView3" />
+
+
+        <EditText
+            android:hint="@string/enterName"
+            android:id="@+id/edit_text_view"
+            style="@style/TextView4">
+
+        </EditText>
+
+        <ImageView
+            android:src="@drawable/map"
+            style="@style/ImageView" />
+
+        <TextView
+            android:text="@string/largest_desert"
+            style="@style/TextView_largestDesert">
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup1"
+            style="@style/radioGroup_parent">
+
+
+            <RadioButton
+                android:text="@string/kalahari"
+                android:id="@+id/kalahari_radiobutton"
+                style="@style/radioGroup_child" />
+
+
+            <RadioButton
+                android:text="@string/sahara"
+                android:id="@+id/sahara_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/arabian"
+                android:id="@+id/arabian_radiobutton"
+                style="@style/radioGroup_child"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:text="@string/suez_canal"
+            style="@style/textView_Suez_canal" />
+
+
+        <CheckBox
+            android:text="@string/arabian_sea"
+            android:id="@+id/arabian_sea_checkbox"
+            android:onClick="showResult"
+            style="@style/check_box" />
+
+        <CheckBox
+            android:id="@+id/red_sea_checkbox"
+            android:text="@string/red_sea"
+            style="@style/checkBox_child" />
+
+        <CheckBox
+            android:text="@string/medit_sea"
+            android:id="@+id/medit_checkbox"
+            style="@style/checkBox_child"/>
+
+        <CheckBox
+            android:text="@string/baltic_sea"
+            android:id="@+id/baltic_checkbox"
+            style="@style/checkBox_child"/>
+
+        <TextView
+            android:text="@string/populous_country"
+            style="@style/textView_populousCountry" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup2"
+            style="@style/radioGroup_parent">
+
+
+            <RadioButton
+                android:text="@string/united_states"
+                android:id="@+id/US_radiobutton"
+                style="@style/radioGroup_child"/>
+
+
+            <RadioButton
+                android:text="@string/china"
+                android:id="@+id/china_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/india"
+                android:id="@+id/india_radiobutton"
+                style="@style/radioGroup_child"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:text="@string/highest_mountain"
+            style="@style/highest_mountain" />
+
+        <RadioGroup
+            android:id="@+id/RGroup3"
+            style="@style/radioGroup_parent">
+
+            <RadioButton
+                android:text="@string/k2"
+                android:id="@+id/k2_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/kilimanjaro"
+                android:id="@+id/kili_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/mount_everest"
+                android:id="@+id/me_radiobutton"
+                style="@style/radioGroup_child"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:text="@string/longest_river"
+            style="@style/longest_river" />
+
+
+        <RadioGroup
+            android:id="@+id/RGroup4"
+            style="@style/radioGroup_parent">
+
+            <RadioButton
+                android:text="@string/nile"
+                android:id="@+id/nile_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/amazon"
+                android:id="@+id/amazon_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/danube"
+                android:id="@+id/danube_radiobutton"
+                style="@style/radioGroup_child"/>
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:text="@string/smallest_country"
+            style="@style/smallest_country" />
+
+
+        <RadioGroup
+            android:id="@+id/RGroup5"
+            style="@style/radioGroup_parent">
+
+            <RadioButton
+                android:text="@string/monaco"
+                android:id="@+id/monaco_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/vatican"
+                android:id="@+id/vatican_radiobutton"
+                style="@style/radioGroup_child"/>
+
+            <RadioButton
+                android:text="@string/maldives"
+                android:id="@+id/maldives_radiobutton"
+                style="@style/radioGroup_child"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:text="@string/result"
+            android:onClick="showResult"
+            style="@style/result_button"
+            android:id ="@+id/result_button"
+            />
+
+        <Button
+            android:text="@string/takeQuizAgain"
+            android:onClick="resetScore"
+            android:id="@+id/resetScore"
+            style="@style/takeQuizAgain_button" />
+
+        <Button
+            android:id="@+id/email"
+            android:onClick="mail"
+            android:text="@string/send"
+            style="@style/mailButton" />
+
+    </LinearLayout>
+
+</ScrollView>
