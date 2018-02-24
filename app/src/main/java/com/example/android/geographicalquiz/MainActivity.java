@@ -12,6 +12,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.android.geographicalquiz.R;
+
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
